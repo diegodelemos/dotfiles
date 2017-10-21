@@ -1,0 +1,44 @@
+[user]
+    name = Diego Rodriguez
+    email = diego.rodriguez@cern.ch
+    signingkey = AA2E1B4631D1CB9D
+
+[github]
+    user = diegodelemos
+
+[core]
+	editor = vim
+[alias]
+    c = commit
+    ca = commit --amend
+    can = commit --amend --no-edit
+
+    s = status
+
+    prune = fetch --prune
+
+    glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
+    g = grep
+
+    last = log -p -1
+
+    aa = add --all
+
+    df = diff
+    dc = diff --cached
+
+    undo = reset --hard
+
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+
+    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+
+    fu = fetch upstream
+
+    mffo = merge --ff-only
+
+[commit]
+  gpgSign = true
