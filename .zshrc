@@ -55,6 +55,19 @@ alias docker-clean=' \
   docker network prune -f ; \
   docker volume prune -f '
 
+# Create Dockerfile.debug
+WDB='RUN apt-get update && \
+    apt-get install -y vim emacs-nox && \
+    pip install wdb
+ENV WDB_SOCKET_SERVER=wdb
+ENV WDB_NO_BROWSER_AUTO_OPEN=True
+ENV TERM=xterm
+ENV FLASK_DEBUG=1'
+devDockerfile() {
+    file=${1:-Dockerfile}
+    var="$WDB" perl -0pe 's/.*\nFROM python:3.5/$&\n$ENV{"var"}/s' $file > $file.debug
+}
+
 # Console two columns color diff
 alias ccdiff="git difftool -y -x 'colordiff -y -W $COLUMNS' | less -R"
 
