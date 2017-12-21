@@ -79,3 +79,8 @@ exit() {
         tmux detach
     fi
 }
+
+# kubectl autocompletion
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
