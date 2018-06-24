@@ -1,7 +1,9 @@
 {
     "editor.multiCursorModifier": "alt",
     "editor.rulers": [79, 120],
-    "python.venvPath": "/Users/rodrigdi/.virtualenvs",
+    "python.venvFolders": [
+        ".virtualenvs",
+    ],
     "python.linting.pydocstyleEnabled": true,
     "gitlens.keymap": "none",
     "gitProjectManager.baseProjectsFolders": [
