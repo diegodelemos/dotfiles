@@ -7,7 +7,7 @@
     user = diegodelemos
 
 [core]
-    excludesfile = /Users/rodrigdi/dotfiles/.gitignore_global
+    excludesfile = ~/dotfiles/.gitignore_global
     editor = vim
 [alias]
     c = commit

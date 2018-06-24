@@ -7,7 +7,7 @@
     "python.linting.pydocstyleEnabled": true,
     "gitlens.keymap": "none",
     "gitProjectManager.baseProjectsFolders": [
-        "/Users/rodrigdi/code/"
+        "~/code/"
     ],
     "window.zoomLevel": 0,
     "diffEditor.ignoreTrimWhitespace": true,
