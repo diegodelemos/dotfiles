@@ -1,6 +1,10 @@
 {
     "editor.multiCursorModifier": "alt",
     "editor.rulers": [79, 120],
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
+    "files.trimTrailingWhitespace": true,
     "python.venvFolders": [
         ".virtualenvs",
     ],
@@ -9,6 +13,9 @@
     "gitProjectManager.baseProjectsFolders": [
         "~/code/"
     ],
+    "gitProjectManager.maxDepthRecursion": 1,
+    "gitProjectManager.openInNewWindow": true,
+    "gitProjectManager.searchInsideProjects": false,
     "window.zoomLevel": 0,
     "diffEditor.ignoreTrimWhitespace": true,
     "gitlens.advanced.messages": {
@@ -29,5 +36,5 @@
     ],
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.annotations.enabled": false,
-    "git.ignoreMissingGitWarning": true
+    "git.ignoreMissingGitWarning": true,
 }
