@@ -1,0 +1,31 @@
+{
+    "editor.multiCursorModifier": "alt",
+    "editor.rulers": [79, 120],
+    "python.venvPath": "/Users/rodrigdi/.virtualenvs",
+    "python.linting.pydocstyleEnabled": true,
+    "gitlens.keymap": "none",
+    "gitProjectManager.baseProjectsFolders": [
+        "/Users/rodrigdi/code/"
+    ],
+    "window.zoomLevel": 0,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true
+    },
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.blame.highlight.locations": [
+        "gutter",
+        "line",
+        "overview"
+    ],
+    "gitlens.hovers.currentLine.enabled": false,
+    "gitlens.hovers.annotations.enabled": false,
+    "git.ignoreMissingGitWarning": true
+}
