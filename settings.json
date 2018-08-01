@@ -6,7 +6,7 @@
     "editor.cursorBlinking": "solid",
     "files.trimTrailingWhitespace": true,
     "python.venvFolders": [
-        ".virtualenvs",
+        "~/.virtualenvs",
     ],
     "python.linting.pydocstyleEnabled": true,
     "gitlens.keymap": "none",
