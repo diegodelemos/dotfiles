@@ -37,4 +37,14 @@
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.annotations.enabled": false,
     "git.ignoreMissingGitWarning": true,
+    // "saveAndRun": {
+    //     "commands": [
+    //         {
+    //             "match": ".py",
+    //             "isAsync": true,
+    //             "cmd": "full_component_name=$(basename ${workspaceRoot}) && component_name=${full_component_name/reana-/} && eval `minikube docker-env` && docker build . -t reanahub/\"$full_component_name\":latest && kubectl delete pods -l app=$component_name",
+    //             "silent": true
+    //         }
+    //     ]
+    // }
 }
