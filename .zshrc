@@ -16,6 +16,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export REANA_SRCDIR=/Users/rodrigdi/code/reana/
+export REANA_GITHUB_USER=diegodelemos
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
 source /usr/local/bin/virtualenvwrapper.sh
@@ -36,6 +38,8 @@ alias zshconfig="emacs -nw ~/.zshrc"
 alias ohmyzsh="emacs -nw ~/.oh-my-zsh"
 alias gitconfig="emacs -nw ~/.gitconfig"
 alias spacemacsconfig="emacs -nw ~/.spacemacs"
+# REANA aliases
+alias rc="reana-client"
 # Git alias
 alias g="git"
 # Use IPython inside virtualenv
