@@ -9,6 +9,8 @@
 [core]
     excludesfile = ~/dotfiles/.gitignore_global
     editor = vim
+[pager]
+    diff = false
 [alias]
     c = commit
     ca = commit --amend
@@ -40,6 +42,8 @@
     fu = fetch upstream
 
     mffo = merge --ff-only
+
+    delete-merged-branches = "!git checkout master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
 [commit]
   gpgSign = true
