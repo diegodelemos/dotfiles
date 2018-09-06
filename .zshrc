@@ -45,36 +45,21 @@ alias rc="reana-client"
 alias g="git"
 # Use IPython inside virtualenv
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
-# Read only view files
-ev() {
-  emacs -nw "$1" --eval '(setq buffer-read-only t)'
-}
-# yamltojson
-yamltojson() {
-  python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' < $1
-}
 # Clean docker images ...
 alias docker-clean=' \
   docker container prune -f ; \
   docker image prune -f ; \
   docker network prune -f ; \
   docker volume prune -f '
-
-# Create Dockerfile.debug
-WDB='RUN apt-get update && \
-    apt-get install -y vim emacs-nox && \
-    pip install wdb
-ENV WDB_SOCKET_SERVER=wdb
-ENV WDB_NO_BROWSER_AUTO_OPEN=True
-ENV TERM=xterm
-ENV FLASK_DEBUG=1'
-devDockerfile() {
-    file=${1:-Dockerfile}
-    var="$WDB" perl -0pe 's/.*\nFROM python:3.5/$&\n$ENV{"var"}/s' $file > $file.debug
-}
-
 # Console two columns color diff
 alias ccdiff="git difftool -y -x 'colordiff -y -W $COLUMNS' | less -R"
+
+# Utilities
+
+# yamltojson
+yamltojson() {
+  python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' < $1
+}
 
 # avoid closing tmux session when exiting by accident, detach.
 exit() {
