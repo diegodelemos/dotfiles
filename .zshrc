@@ -26,6 +26,11 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+# fzf fuzzy history search
+# brew install fzf
+# $(brew --prefix)/opt/fzf/install
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -53,6 +58,10 @@ alias docker-clean=' \
   docker volume prune -f '
 # Console two columns color diff
 alias ccdiff="git difftool -y -x 'colordiff -y -W $COLUMNS' | less -R"
+# Improvements
+alias cat='bat'
+# man for human beings
+alias help='tldr'
 
 # Utilities
 
