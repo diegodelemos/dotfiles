@@ -16,7 +16,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export REANA_SRCDIR=/Users/rodrigdi/code/reana/
+export REANA_SRCDIR=/Users/rodrigdi/code/reanahub/
 export REANA_GITHUB_USER=diegodelemos
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
