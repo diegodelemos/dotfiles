@@ -34,7 +34,8 @@
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.annotations.enabled": false,
     "git.ignoreMissingGitWarning": true,
-    "python.venvPath": "/Users/rodrigdi/.virtualenvs"
+    "python.venvPath": "/Users/rodrigdi/.virtualenvs",
+    "breadcrumbs.enabled": true
     // "saveAndRun": {
     //     "commands": [
     //         {
