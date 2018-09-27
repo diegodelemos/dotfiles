@@ -16,6 +16,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 export REANA_SRCDIR=/Users/rodrigdi/code/reanahub/
 export REANA_GITHUB_USER=diegodelemos
 export WORKON_HOME=$HOME/.virtualenvs
