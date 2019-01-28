@@ -1,9 +1,0 @@
-2gua.rainbow-brackets
-PeterJausovec.vscode-docker
-eamodio.gitlens
-felipecaputo.git-project-manager
-jebbs.plantuml
-ms-python.python
-searKing.preview-vscode
-# Restore with:
-# cat vscode-extensions.txt | sed '/^#/ d' | xargs -L 1 code --install-extenion
