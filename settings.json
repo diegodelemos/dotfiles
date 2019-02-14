@@ -35,7 +35,7 @@
     "gitlens.hovers.annotations.enabled": false,
     "git.ignoreMissingGitWarning": true,
     "python.venvPath": "/Users/rodrigdi/.virtualenvs",
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
     // "saveAndRun": {
     //     "commands": [
     //         {
@@ -46,4 +46,7 @@
     //         }
     //     ]
     // }
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
 }
