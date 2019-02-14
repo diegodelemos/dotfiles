@@ -49,7 +49,14 @@ alias spacemacsconfig="emacs -nw ~/.spacemacs"
 # REANA aliases
 alias rc="reana-client"
 # Git alias
-alias g="git"
+alias git=hub
+alias g=hub
+# React Native
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
 # Use IPython inside virtualenv
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
 # Clean docker images ...
