@@ -10,7 +10,8 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git kubectl zsh-autosuggestions)
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=6
 
 source $ZSH/oh-my-zsh.sh
 
@@ -23,7 +24,7 @@ export REANA_GITHUB_USER=diegodelemos
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
 source /usr/local/bin/virtualenvwrapper.sh
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:${KREW_ROOT:-$HOME/.krew}/bin"
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
@@ -40,12 +41,6 @@ export NVM_DIR="$HOME/.nvm"
 #
 # Example aliases
 
-# Edit config shortcuts
-alias tmuxconfig="emacs -nw ~/.tmux.conf"
-alias zshconfig="emacs -nw ~/.zshrc"
-alias ohmyzsh="emacs -nw ~/.oh-my-zsh"
-alias gitconfig="emacs -nw ~/.gitconfig"
-alias spacemacsconfig="emacs -nw ~/.spacemacs"
 # REANA aliases
 alias rc="reana-client"
 # Git alias
