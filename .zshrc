@@ -1,3 +1,25 @@
+echo "Best Spanish Tortilla recipe ever."
+echo ""
+echo "Ingredients:"
+echo "    - 1 kilogram (about 2 pounds) of potatoes"
+echo "    - Salt to taste"
+echo "    - 8 large eggs (free range if possible)"
+echo "    - 1 yellow onion (very important)"
+echo "    - Extra Virgin Olive Oil"
+echo ""
+echo "Directions:"
+echo "    - Heat a 2cm of high quality extra virgin olive oil in a large frying pan at medium low heat."
+echo "    - Peel the potatoes and rinse them under cold water."
+echo "    - Slice the potatoes and the onions into thin slices."
+echo "    - When the oil is hot, add the potatoes and onions, and add more oil if necessary until all are covered."
+echo "    - Cook the potatoes and the onions for 20 minutes at a low heat (they may break apart, that is okay)."
+echo "    - Once the potatoes are soft and start to become golden, remove them with a slotted spoon into a strainer and allow to cool off while any excess oil drips away"
+echo "    - After a few minutes, add the potatoes and onions to the beaten eggs and stir well."
+echo "    - In the same pan where you fried the potatoes, remove all the oil (you can reuse it!) and over a medium high heat add the egg mixture."
+echo "    - When you are sure that the bottom is cooked and you want to flip the tortilla, take a large plate and put it over the pan and flip quickly!"
+echo "    - Finally, slide out of the pan onto a serving plate and let cool a little before diving in."
+
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
