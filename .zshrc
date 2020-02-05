@@ -10,10 +10,17 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git kubectl zsh-autosuggestions)
+plugins=(
+  git
+  kubectl
+  kube-ps1
+  zsh-autosuggestions
+)
+
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=6
 
 source $ZSH/oh-my-zsh.sh
+PROMPT=$PROMPT'$(kube_ps1) '
 
 # User configuration
 
@@ -82,3 +89,6 @@ exit() {
         tmux detach
     fi
 }
+
+# Configuration for kube-ps1
+KUBE_PS1_SYMBOL_ENABLE=false
