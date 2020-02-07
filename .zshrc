@@ -21,6 +21,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=6
 
 source $ZSH/oh-my-zsh.sh
 PROMPT=$PROMPT'$(kube_ps1) '
+RPROMPT="[%D{%L:%M:%S}]"
 
 # User configuration
 
