@@ -5,7 +5,6 @@
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
     "files.trimTrailingWhitespace": true,
-    "python.linting.pydocstyleEnabled": true,
     "gitlens.keymap": "none",
     "gitProjectManager.baseProjectsFolders": [
         "~/code/"
@@ -13,7 +12,7 @@
     "gitProjectManager.maxDepthRecursion": 1,
     "gitProjectManager.openInNewWindow": true,
     "gitProjectManager.searchInsideProjects": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -2,
     "diffEditor.ignoreTrimWhitespace": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -40,7 +39,6 @@
     },
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Tomorrow Night Blue",
-    "python.linting.flake8Enabled": true,
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -52,4 +50,23 @@
         "--enable=W0614"
     ],
     "explorer.confirmDelete": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.formatting.autopep8Path": "pep8",
+    "editor.formatOnType": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "python.linting.flake8Args": [
+        "--ignore=E203",
+        "--ignore=E266",
+        "--ignore=E501",
+        "--max-line-length=89",
+        "--select = B,C,E,F,W,T4,B9",
+        "--max-complexity = 18",
+        "--ignore=E231",
+        "--ignore=W503",
+        "--ignore=F403",
+        "--ignore=F401"
+    ],
 }
