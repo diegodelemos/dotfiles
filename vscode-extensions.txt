@@ -1,9 +1,28 @@
+# This is the list of vscode extensions I use
+## Extracted from:
+# code --list-extensions
+## To restore:
+# cat vscode-extensions.txt | sed '/^#/ d' | xargs -L 1 code --install-extension
+
 2gua.rainbow-brackets
-PeterJausovec.vscode-docker
+ahmadawais.shades-of-purple
+bierner.emojisense
+brainfit.vscode-importmagic
 eamodio.gitlens
+esbenp.prettier-vscode
 felipecaputo.git-project-manager
-jebbs.plantuml
+foxundermoon.shell-format
+GitHub.vscode-pull-request-github
+jpogran.puppet-vscode
+KnisterPeter.vscode-github
+lextudio.restructuredtext
+ms-azuretools.vscode-docker
+ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.python
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vsliveshare.vsliveshare
+redhat.vscode-yaml
 searKing.preview-vscode
-# Restore with:
-# cat vscode-extensions.txt | sed '/^#/ d' | xargs -L 1 code --install-extenion
+technosophos.vscode-helm
+timonwong.shellcheck
