@@ -30,7 +30,7 @@ export LANG=en_US.UTF-8
 export REANA_SRCDIR=/Users/rodrigdi/code/reanahub/
 export REANA_GITHUB_USER=diegodelemos
 export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2.7
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python@3.8/bin/python3.8
 source /usr/local/bin/virtualenvwrapper.sh
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:${KREW_ROOT:-$HOME/.krew}/bin"
 
@@ -79,17 +79,18 @@ alias help='tldr'
 
 # yamltojson
 yamltojson() {
-  python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' < $1
+  python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' <$1
 }
 
 # avoid closing tmux session when exiting by accident, detach.
 exit() {
-    if [[ -z $TMUX ]]; then
-        builtin exit
-    else
-        tmux detach
-    fi
+  if [[ -z $TMUX ]]; then
+    builtin exit
+  else
+    tmux detach
+  fi
 }
 
 # Configuration for kube-ps1
 KUBE_PS1_SYMBOL_ENABLE=false
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
