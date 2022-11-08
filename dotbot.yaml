@@ -1,0 +1,17 @@
+- link:
+    ~/.vimrc: 
+      path: .vimrc
+    ~/.zshrc: 
+      path: .zshrc
+    ~/Library/Application Support/Code/User/settings.json:
+      path: settings.json
+    ~/.gitignore_global: 
+      path: .gitignore_global
+    ~/.gitconfig:
+      path: .gitconfig
+- shell:
+  - description: Installing VSCode extensions
+    command: cat "vscode-extensions.txt" | xargs -L 1 code --install-extension
+  - description: Installing CLI tools
+    command: brew install fzf ripgrep httpie jq
+

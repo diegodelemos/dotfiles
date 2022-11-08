@@ -1,46 +1,102 @@
-# Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/diegorodriguezrodriguez/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  kubectl
-  kube-ps1
-  zsh-autosuggestions
-)
-
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=6
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-PROMPT=$PROMPT'$(kube_ps1) '
-RPROMPT="[%D{%L:%M:%S}]"
 
 # User configuration
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-export REANA_SRCDIR=/Users/rodrigdi/code/reanahub/
-export REANA_GITHUB_USER=diegodelemos
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python@3.8/bin/python3.8
-source /usr/local/bin/virtualenvwrapper.sh
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:${KREW_ROOT:-$HOME/.krew}/bin"
+# export MANPATH="/usr/local/man:$MANPATH"
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
 
-# fzf fuzzy history search
-# brew install fzf
-# $(brew --prefix)/opt/fzf/install
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -48,49 +104,22 @@ export NVM_DIR="$HOME/.nvm"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH=/Users/diegorodriguezrodriguez/.local/bin:$PATH
+export PATH="$PYENV_ROOT/bin:$PATH:/Users/diegorodriguezrodriguez/.local/bin:$(go env GOPATH)/bin"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
-# REANA aliases
-alias rc="reana-client"
-# Git alias
-alias git=hub
-alias g=hub
-# React Native
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/emulator
-# Use IPython inside virtualenv
-alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
-# Clean docker images ...
-alias docker-clean=' \
-  docker container prune -f ; \
-  docker image prune -f ; \
-  docker network prune -f ; \
-  docker volume prune -f '
-# Console two columns color diff
-alias ccdiff="git difftool -y -x 'colordiff -y -W $COLUMNS' | less -R"
-# Improvements
-alias cat='bat'
-# man for human beings
-alias help='tldr'
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Utilities
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# yamltojson
-yamltojson() {
-  python -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' <$1
-}
-
-# avoid closing tmux session when exiting by accident, detach.
-exit() {
-  if [[ -z $TMUX ]]; then
-    builtin exit
-  else
-    tmux detach
-  fi
-}
-
-# Configuration for kube-ps1
-KUBE_PS1_SYMBOL_ENABLE=false
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+# pnpm
+export PNPM_HOME="/Users/diegorodriguezrodriguez/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

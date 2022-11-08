@@ -1,32 +1,17 @@
 [user]
-    name = Diego Rodriguez
-    email = diego.rodriguez@cern.ch
-    signingkey = AA2E1B4631D1CB9D
+  name = Diego Rodriguez Rodriguez
+  email = diegodelemos@pm.me
 [github]
-    user = diegodelemos
+  user = diegodelemos
 [core]
-    excludesfile = ~/dotfiles/.gitignore_global
-    editor = vim
-	ignorecase = false
-[pager]
-    diff = false
-[alias]
-    glog = log --graph --decorate --pretty=format:'%C(blue)%d%Creset %C(yellow)%h%Creset %s, %C(bold green)%an%Creset, %C(green)%cd%Creset' --date=relative --all
-    last = log -p -1
-    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
-    fu = fetch upstream
-    mffo = merge --ff-only
-    delete-merged-branches = "!git checkout master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
-[commit]
-  gpgSign = true
-[gpg]
-	program = gpg2
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  excludesfile = ~/projects/personal/dotfiles/.gitignore_global
+  editor = vim
+  ignorecase = false
+[init]
+  defaultBranch = main
 [diff]
-	tool = vscode
+  tool = vscode
 [difftool "vscode"]
-	cmd = "code --wait --diff  "
+  cmd = "code --wait --diff  "
+[alias]
+  last = log -p -1

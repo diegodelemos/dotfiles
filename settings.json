@@ -1,72 +1,14 @@
 {
-    "editor.multiCursorModifier": "alt",
-    "editor.rulers": [79, 120],
-    "editor.renderWhitespace": "boundary",
-    "editor.cursorStyle": "block",
-    "editor.cursorBlinking": "solid",
-    "files.trimTrailingWhitespace": true,
-    "gitlens.keymap": "none",
-    "gitProjectManager.baseProjectsFolders": [
-        "~/code/"
-    ],
-    "gitProjectManager.maxDepthRecursion": 1,
-    "gitProjectManager.openInNewWindow": true,
-    "gitProjectManager.searchInsideProjects": false,
-    "window.zoomLevel": -2,
-    "diffEditor.ignoreTrimWhitespace": true,
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": true
-    },
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.blame.highlight.locations": [
-        "gutter",
-        "line",
-        "overview"
-    ],
-    "gitlens.hovers.currentLine.enabled": false,
-    "gitlens.hovers.annotations.enabled": false,
-    "git.ignoreMissingGitWarning": true,
-    "python.venvPath": "/Users/rodrigdi/.virtualenvs",
-    "breadcrumbs.enabled": true,
-    "[javascript]": {
-        "editor.formatOnSave": true
-    },
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Tomorrow Night Blue",
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "editor.fontSize": 18,
-    "terminal.integrated.fontSize": 18,
-    "remote.SSH.configFile": "/Users/rodrigdi/Desktop/ssh-remotes.SSH",
-    "explorer.confirmDragAndDrop": false,
-    "python.linting.pylintArgs": [
-        "--enable=W0614"
-    ],
     "explorer.confirmDelete": false,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "python.formatting.autopep8Path": "pep8",
-    "editor.formatOnType": true,
-    "python.formatting.provider": "black",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "workbench.editor.showTabs": false,
     "editor.formatOnSave": true,
-    "python.linting.flake8Args": [
-        "--ignore=E203",
-        "--ignore=E266",
-        "--ignore=E501",
-        "--max-line-length=89",
-        "--select = B,C,E,F,W,T4,B9",
-        "--max-complexity = 18",
-        "--ignore=E231",
-        "--ignore=W503",
-        "--ignore=F403",
-        "--ignore=F401"
+    "python.autoComplete.addBrackets": true,
+    "python.analysis.completeFunctionParens": true,
+    "window.zoomLevel": 1,
+    "gitProjectManager.baseProjectsFolders": [
+        "/Users/diegorodriguezrodriguez/projects"
     ],
+    "go.toolsManagement.autoUpdate": true
 }
