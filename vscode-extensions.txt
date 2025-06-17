@@ -1,4 +1,0 @@
-eamodio.gitlens
-felipecaputo.git-project-manager
-ms-python.python
-timonwong.shellcheck
