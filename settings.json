@@ -1,14 +1,36 @@
 {
     "explorer.confirmDelete": false,
-    "workbench.editor.untitled.hint": "hidden",
     "workbench.colorTheme": "Tomorrow Night Blue",
-    "workbench.editor.showTabs": false,
     "editor.formatOnSave": true,
     "python.autoComplete.addBrackets": true,
     "python.analysis.completeFunctionParens": true,
-    "window.zoomLevel": 1,
     "gitProjectManager.baseProjectsFolders": [
         "/Users/diegorodriguezrodriguez/projects"
     ],
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "python.venvFolders": [
+        "~/.cache/pypoetry/virtualenvs"
+    ],
+    "[python]": {
+        "editor.formatOnType": true,
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "window.zoomLevel": -1,
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.sideBar.location": "right",
+    "workbench.preferredDarkColorTheme": "Tomorrow Night Blue",
+    "editor.minimap.enabled": false,
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Visual Studio Light",
+    "editor.fontSize": 18,
+    "debug.console.fontSize": 18,
+    "terminal.integrated.fontSize": 18,
+    "chat.editor.fontSize": 16,
+    "markdown.preview.fontSize": 18,
+    "screencastMode.fontSize": 26,
+    "editor.mouseWheelZoom": true,
+    "cursor.cpp.enablePartialAccepts": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "cursor.composer.shouldAllowCustomModes": true,
+    "cursor.composer.shouldChimeAfterChatFinishes": true
 }
